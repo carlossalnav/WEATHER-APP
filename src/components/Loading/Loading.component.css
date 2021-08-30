@@ -1,0 +1,30 @@
+.spinner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 50px solid rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border-left-color: rgb(255, 255, 255);
+
+    animation: spin 1s ease infinite;
+    transition: 0.4s ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .spinner{
+        width: 250px;
+        height: 250px;
+    }
+}
